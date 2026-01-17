@@ -55,7 +55,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 03-01: MongoDB session persistence and /validate endpoint
+- [x] 03-01: MongoDB session persistence and /validate endpoint
 - [ ] 03-02: Progress bar, Canadian validation, mobile responsive
 
 ## Progress
@@ -64,4 +64,4 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Backend API | 2/2 | Complete | 2026-01-17 |
 | 2. Frontend Core | 3/3 | Complete | 2026-01-17 |
-| 3. Polish & Persistence | 0/2 | Not started | - |
+| 3. Polish & Persistence | 1/2 | In progress | - |
