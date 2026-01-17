@@ -7,7 +7,7 @@ Build an AI-powered Ontario Works form assistant in three phases: backend API wi
 ## Phases
 
 - [x] **Phase 1: Backend API** - Express server with Gemini-powered /explain and /chat endpoints
-- [ ] **Phase 2: Frontend Core** - Next.js form display with interactive chat panel and auto-fill
+- [x] **Phase 2: Frontend Core** - Next.js form display with interactive chat panel and auto-fill
 - [ ] **Phase 3: Polish & Persistence** - Validation, progress bar, session persistence, mobile responsive
 
 ## Phase Details
@@ -41,7 +41,7 @@ Plans:
 Plans:
 - [x] 02-01: Next.js setup with Tailwind, Zustand store, form data
 - [x] 02-02: Form components (FormSection, FormQuestion, ProgressBar)
-- [ ] 02-03: Chat panel with API integration and auto-fill
+- [x] 02-03: Chat panel with API integration and auto-fill
 
 ### Phase 3: Polish & Persistence
 **Goal**: Production-ready polish with validation, persistence, and responsiveness
@@ -63,5 +63,5 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Backend API | 2/2 | Complete | 2026-01-17 |
-| 2. Frontend Core | 2/3 | In progress | - |
+| 2. Frontend Core | 3/3 | Complete | 2026-01-17 |
 | 3. Polish & Persistence | 0/2 | Not started | - |
