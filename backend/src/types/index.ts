@@ -42,3 +42,22 @@ export interface QuestionData {
   context?: string;
   commonConfusions?: string;
 }
+
+export interface SessionData {
+  sessionId: string;
+  answers: Record<string, string | number | boolean>;
+  conversations: Record<string, ChatMessage[]>;
+  completedSections: string[];
+}
+
+export interface SaveSessionRequest {
+  sessionId?: string;
+  answers: Record<string, string | number | boolean>;
+  conversations?: Record<string, ChatMessage[]>;
+  completedSections?: string[];
+}
+
+export interface SaveSessionResponse {
+  sessionId: string;
+  message: string;
+}
