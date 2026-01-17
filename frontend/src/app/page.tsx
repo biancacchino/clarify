@@ -3,6 +3,7 @@
 import { Header } from '@/components/Header';
 import { ProgressBar } from '@/components/ProgressBar';
 import { FormSection } from '@/components/FormSection';
+import { ChatPanel } from '@/components/ChatPanel';
 import { ontarioWorksForm } from '@/data/ontarioWorksForm';
 import { useFormStore } from '@/store/formStore';
 
@@ -12,8 +13,6 @@ export default function Home() {
 
   const handleHelpClick = (questionId: string) => {
     setActiveQuestion(questionId);
-    // Chat panel will be added in 02-03
-    console.log('Help requested for question:', questionId);
   };
 
   return (
@@ -21,7 +20,7 @@ export default function Home() {
       <Header />
       <ProgressBar sections={ontarioWorksForm.sections} />
 
-      <main className="max-w-4xl mx-auto px-6 py-8">
+      <main className={`max-w-4xl mx-auto px-6 py-8 transition-all duration-300 ${activeQuestionId ? 'md:mr-[420px]' : ''}`}>
         <div className="mb-6">
           <h2 className="text-2xl font-bold text-gray-900">{ontarioWorksForm.name}</h2>
           <p className="text-gray-600 mt-1">{ontarioWorksForm.description}</p>
@@ -35,21 +34,9 @@ export default function Home() {
             onHelpClick={handleHelpClick}
           />
         ))}
-
-        {/* Placeholder for chat panel - will be positioned here in 02-03 */}
-        {activeQuestionId && (
-          <div className="fixed bottom-4 right-4 bg-white p-4 rounded-lg shadow-lg border border-gray-200">
-            <p className="text-sm text-gray-600">Chat panel will appear here</p>
-            <p className="text-xs text-gray-400 mt-1">Active: {activeQuestionId}</p>
-            <button
-              onClick={() => setActiveQuestion(null)}
-              className="mt-2 text-sm text-blue-600 hover:text-blue-800"
-            >
-              Close
-            </button>
-          </div>
-        )}
       </main>
+
+      <ChatPanel />
     </div>
   );
 }
