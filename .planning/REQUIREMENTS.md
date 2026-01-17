@@ -74,9 +74,9 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| API-01 | Phase 1 | Pending |
-| API-02 | Phase 1 | Pending |
-| API-03 | Phase 1 | Pending |
+| API-01 | Phase 1 | Complete |
+| API-02 | Phase 1 | Complete |
+| API-03 | Phase 1 | Complete |
 | API-04 | Phase 3 | Pending |
 | API-05 | Phase 3 | Pending |
 | API-06 | Phase 3 | Pending |
@@ -91,8 +91,8 @@
 | CHAT-04 | Phase 2 | Pending |
 | CHAT-05 | Phase 2 | Pending |
 | CHAT-06 | Phase 2 | Pending |
-| AI-01 | Phase 1 | Pending |
-| AI-02 | Phase 1 | Pending |
+| AI-01 | Phase 1 | Complete |
+| AI-02 | Phase 1 | Complete |
 | AI-03 | Phase 2 | Pending |
 | AI-04 | Phase 3 | Pending |
 | DATA-01 | Phase 2 | Pending |
